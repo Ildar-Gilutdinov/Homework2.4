@@ -20,8 +20,8 @@ public class MagicBox<T> {
 
     public T pick() {//метод проверки заполнения коробки
         for (int i = 0; i < items.length; i++) {
-        if (items[i] == null) { //поиск пустых ячеек в коробке
-            throw new RuntimeException("Коробка не полна, осталось заполнить ещё " + (items.length - i));// выполнение условия, если коробка имеет пустые ячейки
+            if (items[i] == null) { //поиск пустых ячеек в коробке
+                throw new RuntimeException("Коробка не полна, осталось заполнить ещё " + (items.length - i));// выполнение условия, если коробка имеет пустые ячейки
             }
         }
         Random random = new Random(); //выполнение условия, если в коробке нет пустых ячеек
